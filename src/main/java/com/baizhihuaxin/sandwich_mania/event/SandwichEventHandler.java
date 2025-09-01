@@ -78,7 +78,7 @@ public class SandwichEventHandler implements UseBlockCallback {
                 }
             }
             //按绑定按键空手拆散三明治
-        } else if (PlaceSandwichKey.isKeyPressed() && player.getMainHandStack().equals(ItemStack.EMPTY)) {
+        } else if (PlaceSandwichKey.isKeyPressed() && player.getMainHandStack().equals(ItemStack.EMPTY) && !player.isSneaking()) {
             if (world.getBlockState(pos).getBlock().equals(ModBlocks.SANDWICH_BLOCK)) {
                 if (world.getBlockEntity(pos) instanceof SandwichBlockEntity sandwichBlockEntity) {
                     for (ItemStack stack : sandwichBlockEntity.getFoodItems()) {
@@ -97,7 +97,7 @@ public class SandwichEventHandler implements UseBlockCallback {
                 return ActionResult.SUCCESS;
             }
             //潜行空手右键吃三明治
-        } else if (player.isSneaking() && player.getMainHandStack().equals(ItemStack.EMPTY)) {
+        } else if (player.isSneaking() && player.getMainHandStack().equals(ItemStack.EMPTY) && !PlaceSandwichKey.isKeyPressed()) {
             if (world.getBlockState(pos).getBlock().equals(ModBlocks.SANDWICH_BLOCK)) {
                 if (world.getBlockEntity(pos) instanceof SandwichBlockEntity sandwichBlockEntity) {
                     List<StatusEffectInstance> effects = new ArrayList<>();
