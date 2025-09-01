@@ -9,8 +9,6 @@ import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 public class SandwichManiaClient implements ClientModInitializer {
 
 
-
-
     @Override
     public void onInitializeClient() {
         BlockEntityRendererRegistry.register(ModBlockEntityType.SANDWICH_BLOCK_ENTITY,
