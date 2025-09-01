@@ -7,8 +7,8 @@ import net.minecraft.client.util.InputUtil;
 import org.lwjgl.glfw.GLFW;
 
 public class PlaceSandwichKey {
-    public static final String KEY_CATEGORY = "key.category.better-dropping";
-    public static final String KEY_PLACE_SANDWICH = "key.element_things.place_sandwich";
+    public static final String KEY_CATEGORY = "key.category.sandwich_mania";
+    public static final String KEY_PLACE_SANDWICH = "key.sandwich_mania.place_sandwich";
     public static KeyBinding placeSandwich;
     public static void registerKeyInputs(){
         ClientTickEvents.END_CLIENT_TICK.register(minecraftClient -> {

@@ -3,9 +3,9 @@
 	"id": "sandwich_mania",
 	"version": "${version}",
 	"name": "SandwichMania",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Fold the food to make a sandwich!",
 	"authors": [
-		"Me!"
+		"BaiZhihuaxin"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
